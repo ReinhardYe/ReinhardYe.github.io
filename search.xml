@@ -67,7 +67,32 @@
   <entry>
     <title>Ubuntu系统重装</title>
     <url>/2022/02/27/Ubuntu%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85/</url>
-    <content><![CDATA[<p>系统分区<br>固态磁盘<br>EFI    主分区        1024M<br>SWAP    主分区        8192M<br>/    逻辑分区    剩余空间<br>机械硬盘<br>/home    逻辑分区    剩余空间    </p>
+    <content><![CDATA[<h3 id="系统分区"><a href="#系统分区" class="headerlink" title="系统分区"></a>系统分区</h3><p>固态磁盘</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">EFI	主分区		1024M</span><br><span class="line">SWAP	主分区		8192M</span><br><span class="line">/	逻辑分区	剩余空间</span><br></pre></td></tr></table></figure>
+<p>机械硬盘</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">/home	逻辑分区	剩余空间</span><br></pre></td></tr></table></figure>
+
+<h3 id="Google拼音输入法安装"><a href="#Google拼音输入法安装" class="headerlink" title="Google拼音输入法安装"></a>Google拼音输入法安装</h3><p>在ubuntu20.04版本中，谷歌拼音输入法是基于Fcitx输入法的。我们首先要安装Fcitx。在终端中运行下面命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo apt install fcitx</span><br></pre></td></tr></table></figure>
+<p>配置fcitx</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ im-config</span><br></pre></td></tr></table></figure>
+<p>开启输入窗口，选择fcitx，关闭窗口并重启<br>安装Google输入法</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo apt install fcitx-googlepinyin -y</span><br></pre></td></tr></table></figure>
+<p>重启系统后确认输入法配置</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ fcitx-config-gtk3</span><br></pre></td></tr></table></figure>
+<p>至此输入法应该可以使用了</p>
+<h3 id="系统美化"><a href="#系统美化" class="headerlink" title="系统美化"></a>系统美化</h3><p>可参考<a href="https://zhuanlan.zhihu.com/p/176977192">https://zhuanlan.zhihu.com/p/176977192</a></p>
+<h3 id="Google浏览器安装"><a href="#Google浏览器安装" class="headerlink" title="Google浏览器安装"></a>Google浏览器安装</h3><p>1.下载谷歌浏览器<br>使用wget下载最新的Google Chrome .deb软件包：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb</span><br></pre></td></tr></table></figure>
+<p>2.安装Google Chrome</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo apt install ./google-chrome-stable_current_amd64.deb</span><br></pre></td></tr></table></figure>
+
+<h3 id="网易云音乐安装"><a href="#网易云音乐安装" class="headerlink" title="网易云音乐安装"></a>网易云音乐安装</h3><p>1.下载网易云音乐<br>进入网易云音乐官网<a href="https://music.163.com/#/download%EF%BC%8C%E4%B8%8B%E8%BD%BD">https://music.163.com/#/download，下载</a> Linux版本客户端<br>2.安装网易云音乐</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo dpkg -i netease-cloud-music_1.2.1_amd64_ubuntu_20190428.deb</span><br></pre></td></tr></table></figure>
+
+<h3 id="Intellij-idea安装"><a href="#Intellij-idea安装" class="headerlink" title="Intellij idea安装"></a>Intellij idea安装</h3><p>1.下载Intellij idea<br>官网<a href="https://www.jetbrains.com/idea/download/#section=linux">https://www.jetbrains.com/idea/download/#section=linux</a><br>2.安装Intellij idea</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo tar -zxvf ideaIC-2021.3.2.tar.gz -C /opt</span><br><span class="line">$ <span class="built_in">cd</span> idea-IC-213.6777.52/bin/</span><br><span class="line">$ ./idea.sh</span><br></pre></td></tr></table></figure>
+<p>3.设置快捷方式<br>打开Intellij idea，在菜单栏-&gt;工具-&gt;创建桌面条目，就可以将idea固定在Dock上</p>
 ]]></content>
       <categories>
         <category>系统</category>
