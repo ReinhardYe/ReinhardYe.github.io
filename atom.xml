@@ -6,7 +6,7 @@
   <link href="https://reinhardye.github.io/atom.xml" rel="self"/>
   
   <link href="https://reinhardye.github.io/"/>
-  <updated>2022-01-08T04:46:06.022Z</updated>
+  <updated>2022-02-27T13:31:33.463Z</updated>
   <id>https://reinhardye.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ubuntu系统重装</title>
+    <link href="https://reinhardye.github.io/2022/02/27/Ubuntu%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85/"/>
+    <id>https://reinhardye.github.io/2022/02/27/Ubuntu%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85/</id>
+    <published>2022-02-27T12:00:00.000Z</published>
+    <updated>2022-02-27T13:31:33.463Z</updated>
+    
+    <content type="html"><![CDATA[<p>系统分区<br>固态磁盘<br>EFI    主分区        1024M<br>SWAP    主分区        8192M<br>/    逻辑分区    剩余空间<br>机械硬盘<br>/home    逻辑分区    剩余空间    </p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;系统分区&lt;br&gt;固态磁盘&lt;br&gt;EFI    主分区        1024M&lt;br&gt;SWAP    主分区        8192M&lt;br&gt;/    逻辑分区    剩余空间&lt;br&gt;机械硬盘&lt;br&gt;/home    逻辑分区    剩余空间    &lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="系统" scheme="https://reinhardye.github.io/categories/%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+    <category term="重装" scheme="https://reinhardye.github.io/tags/%E9%87%8D%E8%A3%85/"/>
+    
+  </entry>
   
   <entry>
     <title>Reinhard的书单</title>
